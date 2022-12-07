@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+/* .w3-sidebar {width: 150px;background: #222;margin-bottom:auto;margin-top:100px;} */
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+button {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+* {
+  overflow-y: hidden;
+}
+
+    #ABC {
+      background-image: "thepedl.png";
+      position: absolute;
+      height: %;
+      top: 70px;
+      right: 450px;
+      z-index: -10;
+
+
+
+    }
+
+    #video1 {
+      position: fixed;
+      border-radius: 35px;
+      z-index: 99;
+      top: 18.5%;
+      right: 35.35%;
+      width: 26.5vw;
+      align-items: center;
+    }
+
+    #BLUEBUTTON {
+      background-color: transparent;
+      border: 1px transparent SOLID;
+      position: fixed;
+      top: 115px;
+      right: 310px;
+    }
+
+  #PINKBUTTON {
+    background-color: transparent;
+    border: 1px transparent SOLID;
+    position: fixed;
+    top: 40px;
+    right: 340px;
+  }
+
+#ORANGEBUTTON {
+  background-color: transparent;
+  border: 1px transparent SOLID;
+  position: fixed;
+  top: 20px;
+  right: 261px;
+}
+
+#YELLOWBUTTON {
+background-color: transparent;
+border: 1px transparent SOLID;
+position: fixed;
+top: 90px;
+right: 220px;
+}
+
+#GREENBUTTON {
+background-color: transparent;
+border: 1px transparent SOLID;
+position: fixed;
+top: 140px;
+right: 155px;
+}
+
+#TEALBUTTON {
+background-color: transparent;
+border: 1px transparent SOLID;
+position: fixed;
+top: 170px;
+right: 245px;
+}
+
+#PLAYBUTTON {
+  position: fixed;
+  background-color: transparent;
+  border: 1px transparent SOLID;
+  z-index: 99;
+  top: 4%;
+  right:44.5%;
+  height: 120px;
+  width: 120px;
+  align-items: center;
+}
+
+#logo {
+
+position: fixed;
+width: 30%;
+height: 58%;
+  top: 180px;
+left: 80px;
+
+
+}
+
+#nowplaying {
+background-color: transparent;
+border: 1px transparent SOLID;
+position: fixed;
+top: 600px;
+right: 440px;
+height: 100px;
+length:100px;
+
+}
+
+#pinkguy {
+background-color: transparent;
+border: 1px transparent SOLID;
+position: fixed;
+top: 350px;
+right: 650px;
+height: 120px;
+length:120px;
+}
+#blueguy {
+background-color: transparent;
+border: 1px transparent SOLID;
+position: fixed;
+top: 460px;
+right: 600px;
+height: 120px;
+length:120px;
+}
+
+#greenguy {
+background-color: transparent;
+border: 1px transparent SOLID;
+position: fixed;
+top: 460px;
+right: 700px;
+height: 120px;
+length:120px;
+}
+
+#yellowguy {
+background-color: transparent;
+border: 1px transparent SOLID;
+position: fixed;
+top: 400px;
+right: 600px;
+height: 120px;
+length:120px;
+}
+#orangeguy {
+background-color: transparent;
+border: 1px transparent SOLID;
+position: fixed;
+top: 385px;
+right: 700px;
+height: 120px;
+length:120px;
+}
+#tealguy {
+background-color: transparent;
+border: 1px transparent SOLID;
+position: fixed;
+top: 500px;
+right: 650px;
+height: 120px;
+length:120px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<!-- <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-white"> -->
+  <!-- Avatar image in top left corner -->
+  <img src="logop.png" id="logo">
+    <img src="blueguy.gif" id="blueguy">
+        <img src="pinkguy.gif" id="pinkguy">
+          <img src="greenguy.gif" id="greenguy">
+            <img src="yellowguy.gif" id="yellowguy">
+              <img src="orangeguy.gif" id="orangeguy">
+                <img src="tealguy.gif" id="tealguy">
+
+
+
+
+<!-- Page Content -->
+
+  <!-- Header/Home -->
+
+
+
+     <div style="text-align:center">
+  <!-- <button id="PLAYBUTTON" onclick="playPause()"></button>
+  <img id="BLACKGIF" src="blackguy.gif" width="85" height="85" >
+</button> -->
+
+<button onclick="playPause()"><img id="PLAYBUTTON" src="BLACKBUTTON.png" width="85" height="85" ></button>
+  <button onclick="addSoundBlue()"><img id="BLUEBUTTON" src="BLUEBUTTON.png" width="85" height="85" ></button>
+  <button onclick="addSoundOrange()"><img id="ORANGEBUTTON" src="ORANGEBUTTON.png" width="85"     height="85"></button>
+  <button onclick="addSoundYellow()"><img id="YELLOWBUTTON" src="YELLOWBUTTON.png" width="85"     height="85"></button>
+  <button onclick="addSoundGreen()"><img id="GREENBUTTON" src="GREENBUTTON.png" width="85"     height="85"></button>
+  <button onclick="addSoundPink()"><img id="PINKBUTTON" src="PINKBUTTON.png" width="85"     height="85"></button>
+  <button onclick="addSoundTeal()"><img id="TEALBUTTON" src="TEALBUTTON.png" width="85"     height="85"></button>
+  <br><br>
+  <section id="ABC">
+      <img src="thepedl.png" alt="pedal" class="w3-image" width="500px" height="500px" id="pedal">
+  <video id="video1" width="350">
+    <source src="guitar.mp4" type="video/mp4">
+    <source src="guitar.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</section>
+
+  <img src="nowplaying.png" id="nowplaying" class="w3-image">
+</div>
+
+<script>
+var myVideo = document.getElementById("video1");
+myVideo.loop = true
+var blueSound = new Audio("blue.mp3")
+var orangeSound = new Audio("orange.mp3")
+var yellowSound = new Audio("yellow.mp3")
+var greenSound = new Audio("green.mp3")
+var pinkSound = new Audio("pink.mp3")
+var tealSound = new Audio ("teal.mp3")
+function playPause() {
+  if (myVideo.paused){
+    document.getElementById("PLAYBUTTON").src ="blackguy.gif";
+    myVideo.play();
+  }
+  else{
+    document.getElementById("PLAYBUTTON").src = "BLACKBUTTON.png";
+    myVideo.pause();
+  }
+
+}
+
+function addSoundBlue() {
+    if (blueSound.paused){
+      document.getElementById("BLUEBUTTON").src = "blueguy.gif";
+      blueSound.play();
+    }
+    else{
+       document.getElementById("BLUEBUTTON").src = "BLUEBUTTON.png";
+       blueSound.pause();
+     }
+}
+function addSoundOrange() {
+  if (orangeSound.paused){
+    document.getElementById("ORANGEBUTTON").src = "orangeguy.gif";
+    orangeSound.play();
+  }
+  else{
+     document.getElementById("ORANGEBUTTON").src = "ORANGEBUTTON.png";
+     orangeSound.pause();
+   }
+}
+function addSoundYellow() {
+  if (yellowSound.paused){
+    document.getElementById("YELLOWBUTTON").src = "yellowguy.gif";
+    yellowSound.play();
+  }
+  else{
+     document.getElementById("YELLOWBUTTON").src = "YELLOWBUTTON.png";
+     yellowSound.pause();
+   }
+}
+function addSoundGreen() {
+  if (greenSound.paused){
+    document.getElementById("GREENBUTTON").src = "greenguy.gif";
+    greenSound.play();
+  }
+  else{
+     document.getElementById("GREENBUTTON").src = "GREENBUTTON.png";
+     greenSound.pause();
+   }
+}
+function addSoundPink() {
+  if (pinkSound.paused){
+    document.getElementById("PINKBUTTON").src = "pinkguy.gif";
+    pinkSound.play();
+  }
+  else{
+     document.getElementById("PINKBUTTON").src = "PINKBUTTON.png";
+     pinkSound.pause();
+   }
+}
+function addSoundTeal() {
+  if (tealSound.paused){
+    document.getElementById("TEALBUTTON").src = "tealguy.gif";
+    tealSound.play();
+  }
+  else{
+     document.getElementById("TEALBUTTON").src = "TEALBUTTON.png";
+     tealSound.pause();
+   }
+}
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+  </div>
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
